@@ -1,7 +1,8 @@
 // competitive-verifier: PROBLEM https://judge.yosupo.jp/problem/unionfind
-#include "libs/datastructure/UnionFind.hpp"
-
+#if 1
 #include "libs/other/template.hpp"
+#endif
+#include "libs/datastructure/UnionFind.hpp"
 
 int main() {
   int N, Q;
