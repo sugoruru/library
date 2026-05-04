@@ -3,8 +3,9 @@
 #include "../../libs/math/powMod.hpp"
 
 int main() {
-  ll a, b, m;
-  cin >> a >> b >> m;
-  cout << powMod(a, b, m) << endl;
+  ll mod = 1e9 + 7;
+  ll a, b;
+  cin >> a >> b;
+  cout << powMod(a, b, mod) << endl;
   return 0;
 }
