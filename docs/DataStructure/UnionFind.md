@@ -25,7 +25,7 @@ documentation_of: ../../libs/dataStructure/unionFind.hpp
 
 ## 計算量
 
-- `root(x)` := $O(\alpha(N))$
-- `unite(x, y)` := $O(\alpha(N))$
-- `same(x, y)` := $O(\alpha(N))$
-- `size(x)` := $O(\alpha(N))$
+- `root(x)` : $O(\alpha(N))$
+- `unite(x, y)` : $O(\alpha(N))$
+- `same(x, y)` : $O(\alpha(N))$
+- `size(x)` : $O(\alpha(N))$

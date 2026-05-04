@@ -13,4 +13,4 @@ $a^b \bmod m$ を求める関数.
 
 ## 計算量
 
-- `powMod(a, b, m)` := $O(\log b)$
+- `powMod(a, b, m)` : $O(\log b)$

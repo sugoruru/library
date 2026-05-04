@@ -1,6 +1,6 @@
 ---
 title: Z-algorithm
-documentation_of: ../../libs/string/z_algorithm.hpp
+documentation_of: ../../libs/string/z-algorithm.hpp
 ---
 
 ## 概要
@@ -15,4 +15,4 @@ documentation_of: ../../libs/string/z_algorithm.hpp
 
 ## 計算量
 
-$O(|s|)$
+- `z_algorithm(s)` : $O(|s|)$
