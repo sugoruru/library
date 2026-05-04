@@ -2,28 +2,26 @@
 
 // @title Union-Find
 struct UnionFind {
-  vector<int> parent;
-  vector<int> parentSize;
+  vector<int> pr, sz;
   UnionFind(int N) {
-    for (int i = 0; i < N; i++) {
-      parent.push_back(i);
-      parentSize.push_back(1);
+    rep(i, N) {
+      pr.push_back(i);
+      sz.push_back(1);
     }
   }
   int root(int x) {
-    if (parent[x] == x) return x;
-    parent[x] = root(parent[x]);
-    return parent[x];
+    if (pr[x] == x) return x;
+    pr[x] = root(pr[x]);
+    return pr[x];
   }
   bool unite(int x, int y) {
-    x = root(x);
-    y = root(y);
+    x = root(x), y = root(y);
     if (x == y) return false;
-    if (parentSize[x] > parentSize[y]) swap(x, y);
-    parent[x] = y;
-    parentSize[y] += parentSize[x];
+    if (sz[x] > sz[y]) swap(x, y);
+    pr[x] = y;
+    sz[y] += sz[x];
     return true;
   }
   bool same(int x, int y) { return root(x) == root(y); }
-  int size(int x) { return parentSize[root(x)]; }
+  int size(int x) { return sz[root(x)]; }
 };
