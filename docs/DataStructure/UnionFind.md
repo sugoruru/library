@@ -1,6 +1,6 @@
 ---
 title: UnionFind(DSU)
-documentation_of: //DataStructure/UnionFind.hpp
+documentation_of: libs/DataStructure/UnionFind.hpp
 ---
 
 ## 概要
