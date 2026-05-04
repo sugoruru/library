@@ -1,18 +1,41 @@
 {
   "files": {
+    "libs/other/template.hpp": {
+      "dependencies": ["bits/stdc++.h", "libs/other/template.hpp"],
+      "verification": [],
+      "document_attributes": { "*NOT_SPECIAL_COMMENTS*": "", "links": [] },
+      "additonal_sources": [
+        {
+          "name": "bundled",
+          "path": ".competitive-verifier/bundled/libs/other/template.hpp"
+        }
+      ]
+    },
+    "bits/stdc++.h": {
+      "dependencies": ["bits/stdc++.h"],
+      "verification": [],
+      "document_attributes": {
+        "*NOT_SPECIAL_COMMENTS*": "",
+        "links": ["http://www.gnu.org/licenses/>."]
+      },
+      "additonal_sources": [
+        {
+          "name": "bundled",
+          "path": ".competitive-verifier/bundled/bits/stdc++.h"
+        }
+      ]
+    },
     "verify/datastructure/UnionFind.test.cpp": {
       "dependencies": [
         "bits/stdc++.h",
-        "libs/datastructure/UnionFind.hpp",
-        "libs/other/template.hpp",
         "verify/datastructure/UnionFind.test.cpp"
       ],
       "verification": [
         {
-          "name": "g++",
-          "command": ".competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.out",
+          "name": "g++.EXE",
+          "command": ".competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.exe",
           "compile": [
-            "g++",
+            "C:\\Program Files\\mingw64\\bin\\g++.EXE",
             "--std=c++17",
             "-O2",
             "-Wall",
@@ -21,26 +44,7 @@
             "-I",
             "C:\\Devtop\\cpplib",
             "-o",
-            ".competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.out",
-            "verify\\datastructure\\UnionFind.test.cpp"
-          ],
-          "type": "problem",
-          "problem": "https://judge.yosupo.jp/problem/unionfind"
-        },
-        {
-          "name": "clang++",
-          "command": ".competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.out",
-          "compile": [
-            "clang++",
-            "-std=c++17",
-            "-Wall",
-            "-g",
-            "-fsanitize=undefined",
-            "-D_GLIBCXX_DEBUG",
-            "-I",
-            "C:\\Devtop\\cpplib",
-            "-o",
-            ".competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.out",
+            "C:\\Devtop\\cpplib\\.competitive-verifier\\cache\\problems\\9cee1c300646c09ec8db07886051a645\\a.exe",
             "verify\\datastructure\\UnionFind.test.cpp"
           ],
           "type": "problem",
@@ -58,32 +62,10 @@
         }
       ]
     },
-    "libs/other/template.hpp": {
-      "dependencies": ["bits/stdc++.h", "libs/other/template.hpp"],
-      "verification": [],
-      "document_attributes": { "links": [] },
-      "additonal_sources": [
-        {
-          "name": "bundled",
-          "path": ".competitive-verifier/bundled/libs/other/template.hpp"
-        }
-      ]
-    },
-    "bits/stdc++.h": {
-      "dependencies": ["bits/stdc++.h"],
-      "verification": [],
-      "document_attributes": { "links": ["http://www.gnu.org/licenses/>."] },
-      "additonal_sources": [
-        {
-          "name": "bundled",
-          "path": ".competitive-verifier/bundled/bits/stdc++.h"
-        }
-      ]
-    },
     "libs/datastructure/UnionFind.hpp": {
       "dependencies": ["bits/stdc++.h", "libs/datastructure/UnionFind.hpp"],
       "verification": [],
-      "document_attributes": { "links": [] },
+      "document_attributes": { "*NOT_SPECIAL_COMMENTS*": "", "links": [] },
       "additonal_sources": [
         {
           "name": "bundled",

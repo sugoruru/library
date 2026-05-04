@@ -1,8 +1,5 @@
 [languages.cpp]
-read_macros = false
-[[languages.cpp.environments]]
-CXX = "g++"
-
-[[languages.cpp.environments]]
-CXX = "clang++"
-CXXFLAGS = ["-std=c++17", "-Wall", "-g", "-fsanitize=undefined", "-D_GLIBCXX_DEBUG"]
+compile = "cmd /c \"{CXX} {CXXFLAGS} -o {tempdir}\\a.exe {path} && echo @echo off > {tempdir}\\a.out.bat && echo {tempdir}\\a.exe >> {tempdir}\\a.out.bat\""
+execute = "cmd /c {tempdir}\\a.out.bat"
+bundle = "false"
+list_dependencies = "cmd /c type {path} | findstr /R \"^#include \\\".*\\\"\""
