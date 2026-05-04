@@ -1,3 +1,5 @@
+#pragma once
+
 // @title Union-Find
 struct UnionFind {
   vector<int> parent;
