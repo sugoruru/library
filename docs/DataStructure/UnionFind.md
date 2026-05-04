@@ -1,6 +1,6 @@
 ---
 title: UnionFind(DSU)
-documentation_of: libs/DataStructure/UnionFind.hpp
+documentation_of: ../../libs/dataStructure/unionFind.hpp
 ---
 
 ## 概要
@@ -14,6 +14,7 @@ documentation_of: libs/DataStructure/UnionFind.hpp
 ```
 
 (1) は頂点数を $N$ として初期化される.
+計算量: $O(N)$
 
 ## 使い方
 
@@ -21,3 +22,10 @@ documentation_of: libs/DataStructure/UnionFind.hpp
 - `unite(x, y)` := 頂点 $x$ と頂点 $y$ を同じグループにまとめる.
 - `same(x, y)` := 頂点 $x$ と頂点 $y$ が同じグループに属しているかを判定する.
 - `size(x)` := 頂点 $x$ の属するグループの大きさを求める.
+
+## 計算量
+
+- `root(x)` := $O(\alpha(N))$
+- `unite(x, y)` := $O(\alpha(N))$
+- `same(x, y)` := $O(\alpha(N))$
+- `size(x)` := $O(\alpha(N))$
