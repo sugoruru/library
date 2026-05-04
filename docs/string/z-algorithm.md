@@ -15,4 +15,4 @@ documentation_of: ../../libs/string/z-algorithm.hpp
 
 ## 計算量
 
-- `z_algorithm(s)` : $O(|s|)$
+- `z_algorithm(s)` : $O(\lvert{s}\rvert)$
