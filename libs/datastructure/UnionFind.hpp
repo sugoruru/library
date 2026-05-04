@@ -1,7 +1,3 @@
-#pragma once
-#include <bits/stdc++.h>
-using namespace std;
-
 // @title Union-Find
 struct UnionFind {
   vector<int> parent;
