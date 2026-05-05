@@ -46,25 +46,29 @@ struct LazySegTree {
     T vr = prod(a, b, 2 * k + 2, (l + r) / 2, r);
     return op(vl, vr);
   }
-  int clz(int x) {
-    if (x == 0) return 32;
-    int res = 0;
-    for (int i = 31; i >= 0; i--) {
-      if ((x >> i) & 1) break;
-      res++;
-    }
-    return res;
-  }
   void set(int i, T x) {
-    i += n - 1;
-    for (int j = 31 - clz(i); j >= 0; j--) eval((i >> j), 0, 0);
-    node[i] = x;
-    for (int j = 1; j <= 31 - clz(i); j++)
-      node[i >> j] = op(node[(i >> j) * 2 + 1], node[(i >> j) * 2 + 2]);
+    int idx = i + n, h = 0;
+    while ((1 << h) < n) h++;
+    for (int s = h; s > 0; s--) {
+      int k = (idx >> s) - 1;
+      eval(k, 0, 1 << s);
+    }
+    int ld = idx - 1;
+    eval(ld, 0, 1);
+    node[ld] = x;
+    while (ld > 0) {
+      ld = (ld - 1) / 2;
+      node[ld] = op(node[2 * ld + 1], node[2 * ld + 2]);
+    }
   }
   T operator[](int i) {
-    i += n - 1;
-    for (int j = 31 - clz(i); j >= 0; j--) eval((i >> j), 0, 0);
-    return node[i];
+    int idx = i + n, h = 0;
+    while ((1 << h) < n) h++;
+    for (int s = h; s > 0; s--) {
+      int k = (idx >> s) - 1;
+      eval(k, 0, 1 << s);
+    }
+    eval(idx - 1, 0, 1);
+    return node[idx - 1];
   }
 };
