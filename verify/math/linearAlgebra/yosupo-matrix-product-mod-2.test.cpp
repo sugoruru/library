@@ -1,6 +1,6 @@
 // competitive-verifier: PROBLEM https://judge.yosupo.jp/problem/matrix_product_mod_2
-#include "../../libs/other/template.hpp"
-#include "../../libs/math/bitsetMatrixProduct.hpp"
+#include "../../../libs/other/template.hpp"
+#include "../../../libs/math/linearAlgebra/bitsetMatrixProduct.hpp"
 
 int main() {
   int n, m, k;

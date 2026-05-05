@@ -1,6 +1,6 @@
 // competitive-verifier: PROBLEM https://judge.yosupo.jp/problem/matrix_product
-#include "../../libs/other/template.hpp"
-#include "../../libs/math/matrixProduct.hpp"
+#include "../../../libs/other/template.hpp"
+#include "../../../libs/math/linearAlgebra/matrixProduct.hpp"
 
 int main() {
   int n, m, k;

@@ -1,6 +1,6 @@
 // competitive-verifier: PROBLEM https://judge.yosupo.jp/problem/pow_of_matrix
-#include "../../libs/other/template.hpp"
-#include "../../libs/math/powMatrix.hpp"
+#include "../../../libs/other/template.hpp"
+#include "../../../libs/math/linearAlgebra/powMatrix.hpp"
 
 int main() {
   int mod = 998244353;
