@@ -3,7 +3,7 @@
 vector<int> manacher(string s, bool even = false) {
   if (even) {
     string t = "#";
-    for (char c : s) t += c + "#";
+    for (char c : s) t += c, t += '#';
     s = t;
   }
   int n = s.size(), i = 0, j = 0;
