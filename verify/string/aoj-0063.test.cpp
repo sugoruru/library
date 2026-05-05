@@ -1,4 +1,4 @@
-// competitive-verifier: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0063
+// competitive-verifier: PROBLEM https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0063
 #include "../../libs/other/template.hpp"
 #include "../../libs/string/manacher.hpp"
 
