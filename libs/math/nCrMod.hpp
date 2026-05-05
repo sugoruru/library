@@ -1,7 +1,7 @@
 #pragma once
 
 // @title 二項係数mod
-template <typename T>
+template <typename T = int64_t>
 struct NCR {
   int max = 1000030;
   T mod;
@@ -18,11 +18,11 @@ struct NCR {
     }
   }
   T nCr(T n, T r) {
+    if (n < r) return 0;
+    if (n < 0 || r < 0) return 0;
     T x = fact[n];
     T y = invf[n - r];
     T z = invf[r];
-    if (n < r) return 0;
-    if (n < 0 || r < 0) return 0;
     return x * ((y * z) % mod) % mod;
   }
 };
