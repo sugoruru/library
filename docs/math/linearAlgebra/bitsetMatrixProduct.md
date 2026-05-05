@@ -1,6 +1,6 @@
 ---
 title: $\mathbb{F}_2$ 上での行列積(O(N^3/w))
-documentation_of: ../../libs/math/linearAlgebra/bitsetMatrixProduct.hpp
+documentation_of: ../../../libs/math/linearAlgebra/bitsetMatrixProduct.hpp
 ---
 
 ## 概要

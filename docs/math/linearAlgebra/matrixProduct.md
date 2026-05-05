@@ -1,6 +1,6 @@
 ---
 title: 行列積(O(N^3))
-documentation_of: ../../libs/math/linearAlgebra/matrixProduct.hpp
+documentation_of: ../../../libs/math/linearAlgebra/matrixProduct.hpp
 ---
 
 ## 概要

@@ -1,6 +1,6 @@
 ---
 title: 行列累乗(O(N^3 \log n))
-documentation_of: ../../libs/math/linearAlgebra/powMatrix.hpp
+documentation_of: ../../../libs/math/linearAlgebra/powMatrix.hpp
 ---
 
 ## 概要
