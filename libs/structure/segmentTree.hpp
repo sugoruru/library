@@ -15,7 +15,7 @@ struct SegTree {
   }
   void set(int x, T val) {
     x += n - 1;
-    val += seg[x + n - 1];
+    val = op(val, seg[x]);
     seg[x] = val;
     while (x > 0) {
       x = (x - 1) / 2;
