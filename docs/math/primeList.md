@@ -1,6 +1,6 @@
 ---
 title: 素数列挙(O(n log log n))
-documentation_of: ../../libs/math/PrimeList.hpp
+documentation_of: ../../libs/math/primeList.hpp
 ---
 
 ## 概要
