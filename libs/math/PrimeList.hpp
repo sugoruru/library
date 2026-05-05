@@ -1,5 +1,5 @@
 #pragma once
-#include "primeTable.hpp"
+#include "./primeTable.hpp"
 
 template <typename T>
 vector<T> primeList(T n) {
