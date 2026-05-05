@@ -18,6 +18,12 @@ documentation_of: ../../libs/structure/segmentTree.hpp
 
 ## 使い方
 
+## クエリの種類
+
+- `S`: 区間の型.
+- `op`: 区間の結合演算.
+- `e`: 区間の単位元.
+
 - `set(int x, T val)` : $x$ 番目の値を $val$ に更新する.
 - `prod(int l, int r)` : 区間 $[l, r)$ の値を求める.
 - `get(int x)` : $x$ 番目の値を求める.
