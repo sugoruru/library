@@ -4,7 +4,7 @@ template <typename T>
 using Matrix = vector<vector<T>>;
 
 template <typename T>
-Matrix<T> bitsetMatrixProduct(Matrix<T>& A, Matrix<T>& B) {
+Matrix<T> bitsetMatrixProduct(const Matrix<T>& A, const Matrix<T>& B) {
   const int MAX = 4096;
   int n = A.size(), m = B[0].size(), p = A[0].size();
   assert(p == B.size());
